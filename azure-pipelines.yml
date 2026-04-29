@@ -17,7 +17,6 @@ stages:
       vmImage: 'ubuntu-latest'
     steps:
     - task: Docker@2
-      displayName: Build an image
       inputs:
         containerRegistry: 'in24mins-docker-hub'
         repository: 'in24mins/currency-exchange-devops'
