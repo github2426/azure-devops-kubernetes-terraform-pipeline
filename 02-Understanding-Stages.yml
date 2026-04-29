@@ -32,7 +32,7 @@ stages:
      - bash: echo $(environment)DeployJob
 - stage: ProdDeploy
   variables:
-    environment: Dev
+    environment: Prod
   dependsOn:
    - DevDeploy
    - QADeploy
